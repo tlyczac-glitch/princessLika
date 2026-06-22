@@ -8,10 +8,11 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<div id="spotify-widget">
+<body>
+
+    <div id="spotify-widget">
 
     <button id="spotify-toggle">
 
@@ -34,17 +35,13 @@
 
     </div>
 
-</div>
-
-<script src="playlist.js"></script>
-
-<body>
+    </div>
 
     <!-- INTRO -->
 
     <div id="intro">
 
-        <img src="images/logo.png" class="fullscreen-image" alt="Princess Lika">
+        <img src="./images/logo.png" class="fullscreen-image" alt="Princess Lika">
 
     </div>
 
@@ -100,9 +97,16 @@
 
     </div>
 
+    <section id="memory-viewer" class="memory-viewer" aria-hidden="true">
+        <button id="close-memory" class="close-memory" aria-label="Back to menu">×</button>
+        <iframe id="memory-frame" title="Princess Lika memories"></iframe>
+    </section>
+
     <div id="fx-layer"></div>
 
     <script src="script.js"></script>
+
+    <script src="playlist.js"></script>
 
 </body>
 
